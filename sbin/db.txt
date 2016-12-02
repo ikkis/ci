@@ -1,0 +1,17 @@
+#database_key, database_desc, database_IP, database_PORT, database_USER, database_PWD, database_name
+
+dev_te, TE开发环境数据库, 172.30.11.75, 6613, se, 123456, CP_NEWTE2
+dev_flow, FLOW开发环境数据库, 172.30.11.75, 6611, se, 123456, CP_FLOW
+dev_contract, 合同开发环境数据库, 172.30.0.21, 6608, se, 123456, CP_CONTRACT
+
+prod_te, 线上只读环境, 10.10.6.20, 6613, cprd-read, cprd-read, CP_NEWTE
+prod_flow, 线上只读环境, 10.10.6.19, 6611, cprd-read, cprd-read, CP_FLOW
+prod_contract, 线上只读环境, 10.10.6.25, 6608, cprd-read, cprd-read, CP_CONTRACT
+prod_house_huadong,线上房源,10.10.6.27,6621,customer_admin_s,customer_admin_sel,house_huadong
+prod_cust_huadong,线上客源,10.10.6.21,6620,customer_admin_s,customer_admin_sel,cust_huadong
+
+test_te, TE-QA环境数据库, 172.16.3.147, 6606, se, 123456, CP_NEWTE
+test_flow, FLOW-QA环境数据库, 172.16.3.147, 6606, se, 123456, CP_FLOW
+test_contract, CONTRACT-QA数据库, 172.16.3.147, 6606, se, 123456, CP_CONTRACT
+test_house_huadong, QA数据库, 172.16.3.147, 6606, se, 123456, HOUSE_HUADONG
+test_cust_huadong, QA数据库, 172.16.3.147, 6606, se, 123456, CUST_HUADONG

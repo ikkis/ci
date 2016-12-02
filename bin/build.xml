@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<project name="shixiaoqiang" xmlns:jacoco="antlib:org.jacoco.ant" default="jacoco">
+  <property name="workspace" value=".."/>
+  <property name="jacocoantPath" value="${workspace}/bin/jacocoant.jar"/>
+  <!-->
+  <property name="jacocoexecPath" value="${workspace}/output/jacoco-it.exec"/>
+  <property name="server_ip" value="127.0.0.1"/>
+  <property name="server_port" value="8893"/>
+  -->
+  <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+      <classpath path="${jacocoantPath}" />
+  </taskdef>
+
+  <target name="dump">
+      <jacoco:dump address="${server_ip}" reset="false" destfile="${jacocoexecPath}" port="${server_port}" append="true"/>
+  </target>
+  
+</project>
